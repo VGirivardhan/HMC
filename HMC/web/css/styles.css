@@ -1,0 +1,240 @@
+/* Global Styles */
+
+.hall-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .hall {
+            margin-bottom: 40px;
+        }
+
+        .hall img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .hall h2 {
+            color: #333;
+        }
+
+        .hall p {
+            color: #555;
+        }
+
+        .amenities {
+            margin-top: 15px;
+        }
+
+        .accommodation,
+        .mess-dues {
+            margin-top: 20px;
+        }
+body {
+    color: #777777;
+    background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+    
+}
+
+.logo,
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: #222222;
+}
+
+a {
+    color: #222222;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f58d17;
+}
+
+img {
+    width: 100%;
+}
+
+.btn {
+    border-radius: 0;
+    padding: 14px 38px;
+    transition: all 0.3s ease;
+}
+
+/* Button Styles */
+.btn-brand {
+    color: #ffffff;
+    font-weight: 500;
+    border-color: #f58d17;
+    background-color: #f58d17;
+    transition: all 0.3s ease;
+}
+
+.btn-brand:hover {
+    border-color: #d37810;
+    background-color: #d37810;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel Styles */
+.carousel-inner {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Reservation Styles */
+#reservation .form-control {
+    border-radius: 0;
+}
+
+#reservation .form-control:focus {
+    box-shadow: none;
+    border-color: #f58d17;
+}
+
+#reservation input.form-control {
+    height: 47px;
+}
+
+/* Section Styles */
+/*section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    border-radius: 10px;
+    margin-bottom: -50px;
+}*/
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/cover4.jpg);
+    padding-top: 120px;
+    padding-bottom: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+footer p, footer a {
+    color: rgba(255, 255, 255, 0.75);
+}
+.footer-bottom {
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Login Styles */
+.login {
+    height: fit-content;
+    width: fit-content;
+    padding: 1%;
+    border: 3px solid;
+    border-radius: 10px;
+    background-color: white;
+}
+
+/* Outer Styles */
+.outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* Smooth Scroll Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Card Styles */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title, .card-text {
+    transition: color 0.3s ease;
+}
+
+.card:hover .card-title, .card:hover .card-text {
+    color: #f58d17;
+}
+
+/* Additional Navbar Hover Effect */
+.navbar-nav .nav-link {
+    position: relative;
+    color: #000000; /* Black text color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f58d17; /* Hover text color - Orange */
+}
+
+.navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffa500; /* Orange underline color */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::before,
+body[data-bs-spy="scroll"] .navbar-nav .nav-link.active::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* Button Active State Effect */
+.btn-brand:active {
+    transform: scale(0.95);
+}
+.animate-characters {
+    background-image: linear-gradient(-225deg, yellow 0%, purple 29%, #ff1361 67%, #DD6E0F 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 15s linear infinite;
+    display: inline-block;
+}
+
+@keyframes textclip {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 10px;
+    }
+}
+
+

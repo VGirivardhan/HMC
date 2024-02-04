@@ -1,0 +1,156 @@
+create database HMC;
+use HMC;
+CREATE TABLE `attendant_and_gardener` (
+  `ID` int(2) NOT NULL,
+  `NAME` varchar(50) NOT NULL,
+  `PASSWORD` varchar(40) NOT NULL,
+  `EMAIL_ID` varchar(50) NOT NULL,
+  `CONTACT` bigint(12) NOT NULL,
+  `NO_OF_DAYS` int(3) DEFAULT 0,
+  `TYPE` varchar(10) NOT NULL,
+  `JOINING_DATE` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE `clerk` (
+  `ID` int(6) NOT NULL,
+  `NAME` varchar(50) NOT NULL,
+  `EMAIL_ID` varchar(50) NOT NULL,
+  `PASSWORD` varchar(50) NOT NULL,
+  `CONTACT` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE `complaint` (
+  `ID` int(2) NOT NULL,
+  `NAME` varchar(50) DEFAULT NULL,
+  `EMAIL_ID` varchar(50) DEFAULT NULL,
+  `HALL` int(1) DEFAULT NULL,
+  `ROOM` int(1) DEFAULT NULL,
+  `COM_TYPE` varchar(10) DEFAULT NULL,
+  `COM_DESCP` varchar(200) DEFAULT NULL,
+  `COM_STATUS` tinyint(1) DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE `mess_fee` (
+  `ID` int(2) NOT NULL,
+  `NAME` varchar(50) NOT NULL,
+  `EMAIL_ID` varchar(50) NOT NULL,
+  `AMOUNT` double(40,2) NOT NULL,
+  `DATE` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE `mess_manager` (
+  `ID` int(6) NOT NULL,
+  `NAME` varchar(50) NOT NULL,
+  `EMAIL_ID` varchar(50) NOT NULL,
+  `PASSWORD` varchar(50) NOT NULL,
+  `CONTACT` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE `staff_leaves` (
+  `ID` int(11) NOT NULL,
+  `TYPE` varchar(10) NOT NULL,
+  `NAME` varchar(50) NOT NULL,
+  `EMAIL_ID` varchar(50) NOT NULL,
+  `NO_OF_DAYS` int(3) NOT NULL,
+  `REASON` varchar(250) NOT NULL,
+  `DATES` longtext NOT NULL,
+  `MONTHS` int(2) NOT NULL,
+  `STATUS` tinyint(1) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE `student` (
+  `ID` int(10) NOT NULL,
+  `NAME` varchar(50) NOT NULL,
+  `GENDER` tinyint(1) NOT NULL,
+  `EMAIL_ID` varchar(60) NOT NULL,
+  `PASSWORD` varchar(50) DEFAULT NULL,
+  `PERMANENT_ADDRESS` varchar(250) NOT NULL,
+  `CONTACT` varchar(10) NOT NULL,
+  `ROOM` int(2) DEFAULT NULL,
+  `HALL` int(1) DEFAULT NULL,
+  `AMENITIES` tinyint(1) DEFAULT 0,
+  `MESS_DUES` double(20,2) DEFAULT NULL,
+  `HALL_DUES` double(20,2) DEFAULT NULL,
+  `BALANCE` double(40,2) NOT NULL,
+  `TWIN_SHARE` tinyint(1) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE `tools` (
+  `ID` int(11) NOT NULL,
+  `NAME` varchar(40) NOT NULL,
+  `EMAIL_ID` varchar(40) NOT NULL,
+  `TOOL` varchar(40) NOT NULL,
+  `STATUS` tinyint(1) DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE `warden` (
+  `ID` int(6) NOT NULL,
+  `NAME` varchar(50) NOT NULL,
+  `EMAIL_ID` varchar(50) NOT NULL,
+  `PASSWORD` varchar(50) NOT NULL,
+  `CONTACT` varchar(10) NOT NULL,
+  `HALL` int(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+ALTER TABLE `attendant_and_gardener`
+  ADD PRIMARY KEY (`ID`),
+  ADD UNIQUE KEY `ID` (`ID`,`EMAIL_ID`);
+  
+  ALTER TABLE `clerk`
+  ADD PRIMARY KEY (`ID`),
+  ADD UNIQUE KEY `EMAIL_ID` (`EMAIL_ID`);
+  
+  ALTER TABLE `complaint`
+  ADD PRIMARY KEY (`ID`);
+  
+  ALTER TABLE `mess_fee`
+  ADD PRIMARY KEY (`ID`),
+  ADD UNIQUE KEY `EMAIL_ID` (`EMAIL_ID`);
+
+ALTER TABLE `mess_manager`
+  ADD PRIMARY KEY (`ID`),
+  ADD UNIQUE KEY `EMAIL_ID` (`EMAIL_ID`);
+
+ALTER TABLE `staff_leaves`
+  ADD PRIMARY KEY (`ID`);
+
+ALTER TABLE `student`
+  ADD PRIMARY KEY (`ID`);
+
+ALTER TABLE `tools`
+  ADD PRIMARY KEY (`ID`);
+
+ALTER TABLE `warden`
+  ADD PRIMARY KEY (`ID`),
+  ADD UNIQUE KEY `EMAIL_ID` (`EMAIL_ID`);
+
+ALTER TABLE `attendant_and_gardener`
+  MODIFY `ID` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+ALTER TABLE `clerk`
+  MODIFY `ID` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+ALTER TABLE `complaint`
+  MODIFY `ID` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+ALTER TABLE `mess_fee`
+  MODIFY `ID` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+ALTER TABLE `mess_manager`
+  MODIFY `ID` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+ALTER TABLE `staff_leaves`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+--
+ALTER TABLE `student`
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+ALTER TABLE `tools`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+ALTER TABLE `warden`
+  MODIFY `ID` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+COMMIT;
