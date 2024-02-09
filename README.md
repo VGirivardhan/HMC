@@ -1,54 +1,13 @@
-<!--
-Document   : main
-Created on : 03-Dec-2023, 12:43:26 pm
-Author     : Girivardhan
--->
 
 # HMC Home
-
-[![icon](images/crown.png)](#)
-
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
-
-<style>
-.accordion-item {
-        margin-bottom: 10px;
-        border-radius: 15px; /* Increased border-radius for a rounder look */
-        overflow: hidden;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Custom styling for accordion header */
-    .accordion-header {
-        background-color: #3498db;
-        color: #fff;
-        border-radius: 15px; /* Rounded corners for the header */
-    }
-
-    /* Custom styling for accordion button */
-    .accordion-button {
-        border-radius: 15px; /* Rounded corners for the button */
-        transition: background-color 0.3s ease;
-    }
-
-    /* Custom styling for accordion body */
-    .accordion-body {
-        background-color: #f4f4f4;
-        padding: 15px;
-        border-top: 1px solid #ddd;
-        transition: background-color 0.3s ease;
-        border-radius: 0 0 15px 15px; /* Rounded bottom corners */
-    }
-
-    /* Change background color on hover for better visual feedback */
-    .accordion-button:hover {
-        background-color: #2e86c1;
-    }
-</style>
+<img class="d-block w-100 h-100" src="README_IMAGES/1.png" alt="Firstslide">
+<img class="d-block w-100 h-100" src="README_IMAGES/2.png" alt="Firstslide">
+<img class="d-block w-100 h-100" src="README_IMAGES/3.png" alt="Firstslide">
+<img class="d-block w-100 h-100" src="README_IMAGES/4.png" alt="Firstslide">
+<img class="d-block w-100 h-100" src="README_IMAGES/5.png" alt="Firstslide">
+<img class="d-block w-100 h-100" src="README_IMAGES/6.png" alt="Firstslide">
+<img class="d-block w-100 h-100" src="README_IMAGES/7.png" alt="Firstslide">
+<img class="d-block w-100 h-100" src="README_IMAGES/8.png" alt="Firstslide">
 
 <nav class="navbar navbar-expand-lg py-1 sticky-top bg-white shadow">
     <div class="container-fluid">
@@ -59,25 +18,6 @@ Author     : Girivardhan
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-
-            <div class="d-flex align-items-center">
-                <a href="login.jsp" class="btn btn-brand mx-1"><i class="fas fa-sign-in-alt"></i> Login</a>
-                <a href="registration.jsp" class="btn btn-brand mx-1"><i class="fas fa-user"></i> SignUp</a>
-            </div>
-        </div>
-    </div>
 </nav>
 
 <div id="home" class="carousel slide mb-5" data-bs-ride="carousel">
@@ -94,13 +34,13 @@ Author     : Girivardhan
                 </div>
             </div>
             <div class="carousel-item vh-100 align-items-center justify-content-center">
-                <img class="d-block w-100 h-100" src="images/1.jpg" alt="Second slide">
+                <img class="d-block w-100 h-100" src="HMC/web/images/1.jpg" alt="Second slide">
                 <div class="carousel-caption">
                     <h1 class="text-white">WELCOME TO HALL MANAGEMENT CENTER</h1>
                 </div>
             </div>
             <div class="carousel-item vh-100 align-items-center justify-content-center">
-                <img class="d-block w-100 h-100" src="images/4.jpg" alt="Third slide">
+                <img class="d-block w-100 h-100" src="HMC/web/images/4.jpg" alt="Third slide">
                 <div class="carousel-caption">
                     <h1 class="text-white">WELCOME TO HALL MANAGEMENT CENTER</h1>
                 </div>
@@ -115,22 +55,174 @@ Author     : Girivardhan
 </div>
 
 <div id="about" class="container mb-5">
-    <!-- About section content -->
+    <div class="row gy-4 align-items-center">
+                <div class="col-lg-6">
+                    <img src="HMC/web/images/about.jpg" alt="About">
+                </div>
+                <div class="col-lg-5 ms-auto">
+                    <h1>About us</h1>
+                    <section id="introduction" >
+                            <p><b>At the heart of our student community lies the robust and efficient Hall Management System, a comprehensive software solution designed to streamline and automate various book-keeping activities associated with our day-to-day operations. Tailored to meet the unique needs of our dynamic hostel environment, this software ensures a seamless and secure management experience for both students and administrators.</b></p>
+                        </section>
+
+                <section id="key-features">
+                            <h2 >Key Features:</h2>
+                            <ul>
+                                <li>Admission Module: Effortlessly manage student admissions, room allotments, and generate personalized room allotment letters.</li>
+                                <li>Mess and Rent Management: Simplify the mess charges and room rent calculations, ensuring accurate financial tracking for both students and managers.</li>
+                                <li>Amenities and Complaints: Facilitate student complaints through a user-friendly web interface, categorized by type, with quick response features for wardens.</li>
+                                <li>Financial Management: Streamline the distribution of annual grants, expenditure tracking, and comprehensive financial reporting.</li>
+                                <li>Occupancy Tracking: Real-time monitoring of room occupancy at both hall and overall levels for efficient space management.</li>
+                                <li>Salary and Leave Management: Ensure hassle-free salary processing for temporary staff, along with easy leave management.</li>
+                                <li>Expense Tracking: Monitor petty expenses seamlessly, maintaining financial transparency for all HMC operations.</li>
+                            </ul>
+                        </section>
+
+                        <section id="join-us">
+                            <h2>Join Us in Streamlining Campus Living:</h2>
+                            <p>Experience a new era of hostel management with the IIT Students' Hall Management Center Software. Embrace efficiency, transparency, and security in every aspect of your stay at our esteemed institute.</p>
+                            <p>Your seamless living experience starts here.</p>
+                        </section>
+                    </div>
+            </div>
 </div>
 
 <div class="container m-5">
-    <!-- Services section content -->
+    <h1 class="card-section-heading text-center">Our Services</h1>
+    <div class="row">
+        <!-- Developer Card 1 -->
+        <div class="col-md-4">
+            <div class="card h-100">
+            
+               
 </div>
 
 <h2 class="accordion-section-heading text-center">Hall Management System Overview</h2>
 <div class="accordion accordion-flush m-3" id="accordionFlushExample">
-    <!-- Accordion content -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Student Admission
+            </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                After a student takes admission, their name, permanent address, contact telephone number, and photograph are recorded. The student is then allotted a hall and a specific room number. A letter indicating the allotted room is issued to the student.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Mess Charges
+            </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                Students incur monthly mess charges. The mess manager inputs the total charges for each student in a month on the mess account.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Room Rent and Amenities
+            </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                Each room has a fixed room rent. The halls provide certain amenities to the students, such as reading rooms, playrooms, TV rooms, etc. A fixed amount is levied on each student for amenities.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Complaints and Requests
+            </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                Students can raise various types of complaints and repair requests using a web browser. These include requests for fused lights, non-functional water taps, non-functional water filters, room repair, etc.
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                Grant Distribution
+            </button>
+        </h2>
+        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                The HMC chairman can distribute the annual grant among the different halls. Wardens of different halls can enter their expenditure details against the allocations.
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                Staff Management
+            </button>
+        </h2>
+        <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                The halls employ attendants and gardeners. The Hall clerk can enter leave details for attendants or gardeners. At the end of every month, a consolidated list of salary payable to each employee is printed out.
+            </div>
+        </div>
+    </div>
 </div>
 
 <footer id="contact">
-    <!-- Footer content -->
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="contact-info">
+                        <h4 class="text-white mb-4">CONTACT</h4>
+                        <p class="mb-1"><i class="fas fa-envelope"></i> Email: hmc@iit.ac.in</p>
+                        <p class="mb-1"><i class="fas fa-map-marker-alt"></i> Address: Bangalore</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="quick-links">
+                        <h4 class="text-white mb-4">Connect With Us</h4>
+                        <ul class="social-media-list" style="list-style-type: none;padding: 0;">
+                            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                            <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i> Instagram</a></li>
+                            <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="quick-links">
+                        <h4 class="text-white mb-4">Quick Links</h4>
+                        <ul class="footer-links" style="list-style-type: none;padding: 0;">
+                            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                            <li><a href="login.jsp"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                            <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="mb-0 text-white">Copyrights © 2023 HMC, All rights reserved.</p>
+                </div>
+                <div class="col-lg-6">
+                    <p class="mb-0 text-white">Designed By Team: ASTRAL ADVENTURERS</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
-<script>
-    // JavaScript scripts
-</script>
+
