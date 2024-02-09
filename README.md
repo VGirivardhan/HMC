@@ -1,11 +1,7 @@
-
 # HMC
 ## Hall Management Center Software
-
 The IIT Students' Hall Management Center Software is a dynamic and secure solution designed to cater to the unique needs of the IIT community. It ensures a seamless and efficient management experience for both students and administrators.
-
 ### Key Features
-
 * **Admission Module**: Effortlessly manage student admissions, room allotments, and generate personalized room allotment letters.
 * **Mess and Rent Management**: Simplify the mess charges and room rent calculations, ensuring accurate financial tracking for both students and managers.
 * **Amenities and Complaints**: Facilitate student complaints through a user-friendly web interface, categorized by type, with quick response features for wardens.
@@ -14,7 +10,7 @@ The IIT Students' Hall Management Center Software is a dynamic and secure soluti
 * **Salary and Leave Management**: Ensure hassle-free salary processing for temporary staff, along with easy leave management.
 * **Expense Tracking**: Monitor petty expenses seamlessly, maintaining financial transparency for all HMC operations.
 
-### Our Services
+###  Services
 
 1. **Student Services**
    * Using our website, students can complaint about any issue like mess, room, staff, etc.
@@ -46,16 +42,8 @@ The IIT Students' Hall Management Center Software is a dynamic and secure soluti
 5. **Grant Distribution**: The HMC chairman can distribute the annual grant among the different halls. Wardens of different halls can enter their expenditure details against the allocations.
 6. **Staff Management**: The halls employ attendants and gardeners. The Hall clerk can enter leave details for attendants or gardeners. At the end of every month, a consolidated list of salary payable to each employee is printed out.
 
-### Contact Us
-
-Email: [hmc@iit.ac.in](mailto:hmc@iit.ac.in)
-
-Address: Bangalore
-
 ## Software Interface
 ### Home 
-
-
 <img class="d-block w-100 h-100" src="README_IMAGES/1.png" alt="Firstslide">
 <img class="d-block w-100 h-100" src="README_IMAGES/2.png" alt="Firstslide">
 <img class="d-block w-100 h-100" src="README_IMAGES/3.png" alt="Firstslide">
@@ -65,10 +53,8 @@ Address: Bangalore
 ### Sign Up
 <img class="d-block w-100 h-100" src="README_IMAGES/signup.png" alt="Firstslide">
 
-### Login
+### Log In
 <img class="d-block w-100 h-100" src="README_IMAGES/login.png" alt="Firstslide">
 
-
-
-
-
+## Credits
+### Copyrights © 2023 HMC, All rights reserved.
