@@ -44,11 +44,12 @@ The IIT Students' Hall Management Center Software is a dynamic and secure soluti
 
 ## Software Interface
 ### Home 
-<img class="d-block w-100 h-100" src="README_IMAGES/1.png" alt="Firstslide">
-<img class="d-block w-100 h-100" src="README_IMAGES/2.png" alt="Firstslide">
-<img class="d-block w-100 h-100" src="README_IMAGES/3.png" alt="Firstslide">
-<img class="d-block w-100 h-100" src="README_IMAGES/4.png" alt="Firstslide">
-<img class="d-block w-100 h-100" src="README_IMAGES/5.png" alt="Firstslide">
+<img class="d-block w-100 h-100" src="README_IMAGES/1.png">
+<img class="d-block w-100 h-100" src="README_IMAGES/2.png">
+<img class="d-block w-100 h-100" src="README_IMAGES/3.png">
+<img class="d-block w-100 h-100" src="README_IMAGES/4.png">
+<img class="d-block w-100 h-100" src="README_IMAGES/5.png">
+<img class="d-block w-100 h-100" src="README_IMAGES/6.png">
 
 ### Sign Up
 <img class="d-block w-100 h-100" src="README_IMAGES/signup.png" alt="Firstslide">
