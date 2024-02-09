@@ -57,4 +57,4 @@ The IIT Students' Hall Management Center Software is a dynamic and secure soluti
 <img class="d-block w-100 h-100" src="README_IMAGES/login.png" alt="Firstslide">
 
 ## Credits
-### Copyrights © 2023 HMC, All rights reserved.
+### Copyrights © 2024 HMC, All rights reserved.
